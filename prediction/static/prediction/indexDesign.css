@@ -47,7 +47,8 @@ z-index: -1;
     color: black;
   }
 
-  .heading-box {
+/* heading section */
+.heading-box {
     position: absolute;
     top: 25%;
     left: 50%;
@@ -63,13 +64,13 @@ z-index: -1;
   }
    
 
-.heading-box h1 {
-  font-size: 40px;  
-  font-family: Helvetica, sans-serif;
-  color: whitesmoke;
-  margin: 0;
-  text-align: center;
-  }
+  .heading-box h1 {
+    font-size: 40px;  
+    font-family: Helvetica, sans-serif;
+    color: whitesmoke;
+    margin: 0;
+    text-align: center;
+    }
 
 /* media query for heading adjustment */
 @media screen and (max-width: 750px) {
@@ -82,3 +83,24 @@ z-index: -1;
     width: 80%;
   }
 }
+
+
+/* for animations when scroll */
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(-50%);
+}
+
+  /* turning off the animation to NOT repeat */
+  @media (prefers-reduced-motion: no-preference) {
+    .hidden {
+      transition: all 1s;
+    }
+  }
