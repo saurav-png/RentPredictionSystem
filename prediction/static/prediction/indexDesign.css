@@ -32,3 +32,39 @@ body{
     background-color: #ddd;
     color: black;
   }
+
+  .heading-box {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+    align-content: center;
+    background-color: #121230;
+    width: 40%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 5px #122dc486;
+  }
+   
+
+.heading-box h1 {
+  font-size: 40px;  
+  font-family: Helvetica, sans-serif;
+  color: whitesmoke;
+  margin: 0;
+  text-align: center;
+  }
+
+/* media query for heading adjustment */
+@media screen and (max-width: 750px) {
+  .heading-box{
+    width: 60%;
+  }
+}
+@media screen and (max-width: 492px) {
+  .heading-box{
+    width: 80%;
+  }
+}
