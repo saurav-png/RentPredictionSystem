@@ -7,10 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="{% static 'prediction/indexDesign.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <title>Rent Prediction System</title>
 </head>
 <body>
-    <h1>HELLO!!!</h1>
+    <div class="navbar" id="myNavbar">
+        <a href="{% url 'prediction-home' %}"><i class="fas fa-home"></i> Home</a>
+        <a href="#"><i class="fas fa-address-card" id="about"></i> About</a>
+        </a>
+      </div>
 </body>
 </html>
