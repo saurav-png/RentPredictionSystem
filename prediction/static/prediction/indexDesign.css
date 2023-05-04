@@ -5,3 +5,30 @@ body{
     background-attachment: fixed;
     background-position: center;
 }
+
+/* navbar style */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    width: 100%;
+    background-color: #222222;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navbar a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
