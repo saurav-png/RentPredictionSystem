@@ -51,7 +51,7 @@ z-index: -1;
 .heading-box {
     position: absolute;
     top: 25%;
-    left: 50%;
+    left: 28%;
     transform: translate(-50%, -50%);
     display: grid;
     place-items: center;
@@ -95,7 +95,7 @@ z-index: -1;
 .show{
   opacity: 1;
   filter: blur(0);
-  transform: translateX(-50%);
+  transform: translateX(0);
 }
 
   /* turning off the animation to NOT repeat */
