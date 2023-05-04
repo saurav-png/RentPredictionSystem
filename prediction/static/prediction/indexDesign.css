@@ -1,13 +1,27 @@
 body{
-    background-image:url(./neonVectorCity.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+  background-image:url(./neonVectorCity.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  scroll-behavior: smooth;
+}
+
+body::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black color */
+z-index: -1;
 }
 
 /* navbar style */
 .navbar {
+  z-index: 1;
+  position:absolute;
     position: fixed;
     top: 0;
     left: 0;
