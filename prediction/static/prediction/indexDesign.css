@@ -1,3 +1,6 @@
+*{
+  scroll-behavior: smooth;
+}
 body{
   background-image:url(./neonVectorCity.jpg);
   background-repeat: no-repeat;
@@ -8,65 +11,60 @@ body{
 }
 
 body::before {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black color */
-z-index: -1;
-}
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black color */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: -1;
+  }
 
 /* navbar style */
-.navbar {
-  z-index: 2;
-  position:absolute;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right:0;
-    width: 100%;
-    background-color: #222222;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .navbar a {
-    display: inline-block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  
-  .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+  .navbar {
+    z-index: 2;
+    position:absolute;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right:0;
+      width: 100%;
+      background-color: #222222;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .navbar a {
+      display: inline-block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
   }
 
-.heading-box,
-.start-btn{
-  display: grid;
-  place-items: center;
-  background-color: #121230;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 15px 5px #122dc486;
-}
-
-/* heading section */
-.heading-box {
-    position: absolute;
-    top: 25%;
-    left: 28%;
-    transform: translate(-50%, -50%);
-    width: 40%;
-    z-index: 1;
+/* Common styles */
+  .heading-box,
+  .start-btn,
+  .values-to-predict{
+    display: grid;
+    place-items: center;
+    background-color: #121230;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 5px #122dc486;
   }
-   
 
   .heading-box h1,
   .start-btn p {
@@ -77,53 +75,73 @@ z-index: -1;
     text-align: center;
     }
 
-/* media query for heading adjustment */
-@media screen and (max-width: 750px) {
-  .heading-box{
-    width: 60%;
-    left: 15%;
-  }
-}
-@media screen and (max-width: 492px) {
-  .heading-box{
-    width: 70%;
-    left: 10%;
-  }
-}
+/* heading section */
+  .heading-box {
+      position: absolute;
+      top: 25%;
+      left: 28%;
+      transform: translate(-50%, -50%);
+      width: 40%;
+      z-index: 1;
+    }
 
-@media screen and (max-width: 350px) {
-  .heading-box{
-    left: 7%;
+/* media query for heading adjustment */
+  @media screen and (max-width: 750px) {
+    .heading-box{
+      width: 60%;
+      left: 15%;
+    }
   }
-  .heading-box h1{
-    font-size:28px ;
+  @media screen and (max-width: 492px) {
+    .heading-box{
+      width: 70%;
+      left: 10%;
+    }
   }
-}
+
+  @media screen and (max-width: 350px) {
+    .heading-box{
+      left: 7%;
+    }
+    .heading-box h1{
+      font-size:28px ;
+    }
+  }
 
 
 /* for animations when scroll */
-.hidden{
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1s;
+  .hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
 }
-.show{
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
+  .show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
-  /* turning off the animation to NOT repeat */
+/* turning off the animation to NOT repeat */
   @media (prefers-reduced-motion: no-preference) {
     .hidden {
       transition: all 1s;
     }
+    
+    /* add the same transform property as in the .heading-box class */
+    .start-btn.hidden,
+    .values-to-predict.hidden {
+      transform: translateX(-100%);
+    }
+    
+    /* add the same transform property as in the .show class */
+    .start-btn.show,
+    .values-to-predict.show {
+      transform: translateX(-50%);
+    }
   }
-
 /* start button */
-
-.start-btn {
+  .start-btn {
   position: absolute;
   top: 70%;
   left: 50%;
@@ -138,6 +156,7 @@ z-index: -1;
 .start-btn p {
   font-size: 24px;
   font-weight: 500; 
+  scroll-behavior: smooth;
 }
 .btn {
   display: inline-block;
@@ -156,4 +175,17 @@ z-index: -1;
 
 .btn:hover {
   background-color: #161627;
+}
+
+/* values */
+.values-to-predict{
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  width: 80%;
+  min-height: 30%;
+  margin-top: 4em;
 }
