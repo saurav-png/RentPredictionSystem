@@ -81,30 +81,6 @@ body::before {
       z-index: 1;
     }
 
-/* media query for heading adjustment */
-  @media screen and (max-width: 750px) {
-    .heading-box{
-      width: 60%;
-      left: 15%;
-    }
-  }
-  @media screen and (max-width: 492px) {
-    .heading-box{
-      width: 70%;
-      left: 10%;
-    }
-  }
-
-  @media screen and (max-width: 350px) {
-    .heading-box{
-      left: 7%;
-    }
-    .heading-box h1{
-      font-size:28px ;
-    }
-  }
-
-
 /* for animations when scroll */
   .hidden{
     opacity: 0;
@@ -136,10 +112,11 @@ body::before {
       transform: translateX(-50%);
     }
   }
+
 /* start button */
   .start-btn {
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -176,7 +153,7 @@ body::before {
 /* values */
 .values-to-predict{
   position: absolute;
-  top: 200%;
+  top: 155%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -184,4 +161,33 @@ body::before {
   width: 80%;
   min-height: 30%;
   margin-top: 4em;
+}
+
+/* media query for heading adjustment */
+@media screen and (max-width: 750px) {
+  .heading-box{
+    width: 60%;
+    left: 15%;
+  }
+  .start-btn{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 492px) {
+  .heading-box{
+    width: 70%;
+    left: 10%;
+  }
+  .start-btn{
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .heading-box{
+    left: 10%;
+  }
+  .heading-box h1{
+    font-size:28px ;
+  }
 }
