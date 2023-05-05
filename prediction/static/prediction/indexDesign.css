@@ -76,11 +76,19 @@ z-index: -1;
 @media screen and (max-width: 750px) {
   .heading-box{
     width: 60%;
+    left: 15%;
   }
 }
 @media screen and (max-width: 492px) {
   .heading-box{
-    width: 80%;
+    width: 70%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .heading-box{
+    left: 7%;
   }
 }
 
