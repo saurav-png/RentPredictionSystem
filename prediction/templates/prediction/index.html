@@ -1,20 +1,21 @@
 {% load static %} <!--loading static assets like css, bg pics-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="{% static 'prediction/indexDesign.css' %}">
-    <script src="{% static 'prediction/script.js' %}" defer></script>
+      <link rel="stylesheet" type="text/css" href="{% static 'prediction/indexDesign.css' %}">
+      <script src="{% static 'prediction/script.js' %}" defer></script>
 
-    <link href='https://fonts.googleapis.com/css?family=Bruno Ace' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Bruno Ace' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Changa' rel='stylesheet'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <title>Rent Prediction System</title>
-</head>
-<body>
+      <title>Rent Prediction System</title>
+  </head>
+  <body>
     <div class="navbar" id="myNavbar">
         <a href="{% url 'prediction-home' %}"><i class="fas fa-home"></i> Home</a>
         <a href="#"><i class="fas fa-address-card"></i> About</a>
@@ -27,8 +28,80 @@
         <p>Find out the price of home that you can afford!</p>
         <a href="#main" class="btn">Predict!</a>
     </div>
-    <div class="values-to-predict hidden" id="main">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsa doloribus consectetur iusto unde assumenda animi ad, officia tenetur perspiciatis dolorem accusamus nam corporis, quasi quas dolorum esse aliquam vel.</p>
-    </div>
-</body>
+    
+    <form action="result">
+      <div class="form-container"  id="main">
+        <div class="first hidden">
+          <div class="form-field">
+            <label class="form-label" for="field1">Which City?</label>
+            <input type="text" name="city">
+          </div>
+        </div>
+        
+        <div class="second hidden">
+          <div class="form-field">
+            <label class="form-label" for="field2">Number of Bedrooms</label>
+            <input type="number" name="beds">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="field3">Number of Bathrooms</label>
+            <input type="number" name="bath">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="field4">Size(in sq.ft)</label>
+            <input type="number" name="size">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="field5">How far from Subway?(in min)</label>
+            <input type="number" name="min-to-subway">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="field6">Floor Number</label>
+            <input type="number" name="floor">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="field7">Building's Age</label>
+            <input type="number" name="buildingAge">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="field8">Has a broker fee?</label>
+            <input type="number" name="broker-fee">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="field9">Has a roof deck?</label>
+            <input type="number" name="roof-deck">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="field10">Has wash drier?</label>
+            <input type="number" name="wash-drier">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="field11">Has Doorman?</label>
+            <input type="number" name="doorman">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="field12">Has Elevator?</label>
+            <input type="number" name="elevator">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="field13">Has Dishwasher?</label>
+            <input type="number" name="dishwasher">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="field14">Has Patio?</label>
+            <input type="number" name="patio">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="field15">Has Gym?</label>
+            <input type="number" name="gym">
+          </div>
+        </div>
+      
+      <div class="third hidden">
+        <div class="form-field">
+          <input type="submit" value="Calculate">
+        </div>
+      </div>
+    </form>
+  </body>
 </html>
