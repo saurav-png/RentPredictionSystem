@@ -247,17 +247,19 @@ input[type="number"] {
 }
 
 input[type="submit"] {
-  background-color: #4CAF50;
+  background-color: #0dbfdf;
   border: none;
   color: white;
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 3px;
-  transition: background-color 0.3s ease;
+  width: 150px;
+  height: 40px;
+  transition: background-color 0.5s ease;
 }
 
 input[type="submit"]:hover {
-  background-color: #3e8e41;
+  background-color: #065164;
 }
 
 fieldset {
