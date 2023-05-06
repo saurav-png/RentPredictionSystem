@@ -290,6 +290,13 @@ body::before {
   z-index: 1;
 }
 
+/* Adjusts the scrolling position when clicking on a link to a target element
+   with a specified ID, so that the element is positioned in the middle of the viewport */
+#main {
+  padding-top: 80px;
+  margin-top: -50px;
+}
+
 /* media query for device adjustment */
   @media screen and (max-width: 750px) {
     .heading-box{
