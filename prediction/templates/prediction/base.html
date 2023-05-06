@@ -1,0 +1,27 @@
+{% load static %} <!--loading static assets like css, bg pics-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" type="text/css" href="{% static 'prediction/base.css' %}">
+      <script src="{% static 'prediction/script.js' %}" defer></script>
+
+      <link href='https://fonts.googleapis.com/css?family=Bruno Ace' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Changa' rel='stylesheet'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+      <title>Rent Prediction System</title>
+  </head>
+  <body>
+        <div class="navbar" id="myNavbar">
+            <a href="{% url 'prediction-home' %}"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-address-card"></i> About</a>
+            </a>
+        </div>
+        {%block content%}
+        {% endblock %}
+    </body>
+</html>
