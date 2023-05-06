@@ -1,0 +1,8 @@
+{% extends "prediction/base.html" %}
+{% block content %}
+    {% if showResult %}
+    <div class="result">
+    <p>The predicted rent is: ${{ calculatedValue|floatformat:2 }}</p>
+    </div>
+    {% endif %}
+{% endblock content %}
