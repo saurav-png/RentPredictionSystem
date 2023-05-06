@@ -185,7 +185,7 @@ body::before {
 }
 
 .form-label {
-  width: 200px; /* set a fixed width for the label */
+  width: 200px;
   margin-bottom: 5px;
   color: #CCCCCC;
 }
@@ -308,6 +308,29 @@ fieldset {
     .start-btn{
       width: 85%;
     }
+    .form-container {
+      padding: 10px;
+      margin: 10px auto;
+      width: 35%;
+      left:10%;
+      text-align: center;
+      font-size: 14px;
+    }
+    input[type="number"] {
+      padding: 5px;
+      width: 60%;
+      height:28px;
+      flex-grow: 2;
+    }
+    .form-label {
+      width: 150px;
+    }
+    .second select{
+      width: 68%;
+    }
+    .second .form-label {
+      text-align: left;
+    }
   }
 
   @media screen and (max-width: 350px) {
@@ -316,5 +339,28 @@ fieldset {
     }
     .heading-box h1{
       font-size:28px ;
+    }
+    .form-container {
+      padding: 10px;
+      margin: 10px auto;
+      width: 35%;
+      left:8%;
+      text-align: center;
+      font-size: 14px;
+    }
+    input[type="number"] {
+      padding: 5px;
+      width: 55%;
+      height:28px;
+      flex-grow: 2;
+    }
+    .form-label {
+      width: 100px;
+    }
+    .second select{
+      width: 40%;
+    }
+    .second .form-label {
+      text-align: left;
     }
   }
