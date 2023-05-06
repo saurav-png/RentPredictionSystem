@@ -55,8 +55,7 @@ body::before {
   .start-btn,
   .form-container .first,
   .form-container .second,
-  .form-container .third,
-  .result{
+  .form-container .third{
     display: grid;
     place-items: center;
     background-color: #121230;
@@ -272,14 +271,21 @@ body::before {
 
 /* final result part */
 .result{
+  display: grid;
+  place-items: center;
+  background-color: #121230;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 5px #122dc486;
   position:absolute;
-  top:370%;
-  left: 14%;
+  top:20%;
+  left: 13%;
   margin: 20px auto;
   width: 70%;
+  height: 50%;
   text-align: center;
   font-family: 'Changa';
-  font-size: 35px;
+  font-size: 40px;
   color: #f5f5f5;
   z-index: 1;
 }
@@ -378,5 +384,10 @@ body::before {
     }
     .second .form-label {
       text-align: left;
+    }
+
+    .result{
+      height: 60%;
+      left:12%;
     }
   }
