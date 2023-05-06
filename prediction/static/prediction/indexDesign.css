@@ -199,6 +199,48 @@ input[type="number"] {
   flex-grow: 1;
 }
 
+/* Style the select element */
+  select {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    transition: all 0.9s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+    select option {
+      padding: 10px;
+      font-size: 16px;
+      color: #000000;
+      background-color: #fff;
+      height: 90px;
+      line-height: 90px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    select option:hover {
+      background-color: #f2f2f2;
+    }
+
+    select option:checked {
+      font-weight: bold;
+    }
+
+    select:focus {
+      outline: none;
+      box-shadow: 0 0 5px #aaa;
+      border: 1px solid #aaa;
+    }
+
+
 .second {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -229,31 +271,53 @@ fieldset {
   padding: 0;
 }
 
-/* media query for heading adjustment */
-@media screen and (max-width: 750px) {
-  .heading-box{
-    width: 60%;
-    left: 15%;
+/* media query for device adjustment */
+  @media screen and (max-width: 750px) {
+    .heading-box{
+      width: 60%;
+      left: 15%;
+    }
+    .start-btn{
+      width: 90%;
+    }
+    .form-container{
+      left: 13%;
+    }
   }
-  .start-btn{
-    width: 90%;
-  }
-}
-@media screen and (max-width: 492px) {
-  .heading-box{
-    width: 70%;
-    left: 10%;
-  }
-  .start-btn{
-    width: 85%;
-  }
-}
 
-@media screen and (max-width: 350px) {
-  .heading-box{
-    left: 10%;
+  @media screen and (max-width:620px){
+    .form-container{
+      left: 10%;
+    }
   }
-  .heading-box h1{
-    font-size:28px ;
+
+  @media screen and (max-width:570px){
+    .form-container{
+      left: 8%;
+    }
   }
-}
+
+    @media screen and (max-width:535px){
+    .form-container{
+      left: 0%;
+    }
+  }
+
+  @media screen and (max-width: 492px) {
+    .heading-box{
+      width: 70%;
+      left: 10%;
+    }
+    .start-btn{
+      width: 85%;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .heading-box{
+      left: 10%;
+    }
+    .heading-box h1{
+      font-size:28px ;
+    }
+  }
