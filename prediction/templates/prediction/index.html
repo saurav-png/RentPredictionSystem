@@ -34,7 +34,12 @@
         <div class="first hidden">
           <div class="form-field">
             <label class="form-label" for="field1">Which City?</label>
-            <input type="text" name="city">
+            <select name="city">
+              <option value=""></option>
+              <option value="manhattan">Manhattan</option>
+              <option value="brooklyn">Brooklyn</option>
+              <option value="queens">Queens</option>
+            </select>
           </div>
         </div>
         
@@ -53,7 +58,7 @@
           </div>
           <div class="form-field">
             <label class="form-label" for="field5">How far from Subway?(in min)</label>
-            <input type="number" name="min-to-subway">
+            <input type="number" name="min-to-subway" step="0.01">
           </div>
           <div class="form-field">
             <label class="form-label" for="field6">Floor Number</label>
@@ -65,35 +70,67 @@
           </div>
           <div class="form-field">
             <label class="form-label" for="field8">Has a broker fee?</label>
-            <input type="number" name="broker-fee">
+            <select name="broker-fee">
+              <option value=0></option>
+              <option value=1>Yes</option>
+              <option value=0>No</option>
+            </select>
           </div>
           <div class="form-field">
             <label class="form-label" for="field9">Has a roof deck?</label>
-            <input type="number" name="roof-deck">
+            <select name="roof-deck">
+              <option value=0></option>
+              <option value=1>Yes</option>
+              <option value=0>No</option>
+            </select>
           </div>
           <div class="form-field">
             <label class="form-label" for="field10">Has wash drier?</label>
-            <input type="number" name="wash-drier">
+            <select name="wash-drier">
+              <option value=0></option>
+              <option value=1>Yes</option>
+              <option value=0>No</option>
+            </select>
           </div>
           <div class="form-field">
             <label class="form-label" for="field11">Has Doorman?</label>
-            <input type="number" name="doorman">
+            <select name="doorman">
+              <option value=0></option>
+              <option value=1>Yes</option>
+              <option value=0>No</option>
+            </select>
           </div>
           <div class="form-field">
             <label class="form-label" for="field12">Has Elevator?</label>
-            <input type="number" name="elevator">
+            <select name="elevator">  
+              <option value=0></option>
+              <option value=1>Yes</option>
+              <option value=0>No</option>
+            </select>
           </div>
           <div class="form-field">
             <label class="form-label" for="field13">Has Dishwasher?</label>
-            <input type="number" name="dishwasher">
+            <select name="dishwasher">
+              <option value=0></option>
+              <option value=1>Yes</option>
+              <option value=0>No</option>
+            </select>
           </div>
           <div class="form-field">
             <label class="form-label" for="field14">Has Patio?</label>
-            <input type="number" name="patio">
+            <select name="patio">
+              <option value=0></option>
+              <option value=1>Yes</option>
+              <option value=0>No</option>
+            </select>
           </div>
           <div class="form-field">
             <label class="form-label" for="field15">Has Gym?</label>
-            <input type="number" name="gym">
+            <select name="gym">
+              <option value=0></option>
+              <option value=1>Yes</option>
+              <option value=0>No</option>
+            </select>
           </div>
         </div>
       
