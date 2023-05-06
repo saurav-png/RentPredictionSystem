@@ -25,15 +25,15 @@ body::before {
   .navbar {
     z-index: 2;
     position:absolute;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right:0;
-      width: 100%;
-      background-color: #222222;
-      text-align: center;
-      display: flex;
-      justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    width: 100%;
+    background-color: #222222;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
     }
     
     .navbar a {
@@ -53,7 +53,9 @@ body::before {
 /* Common styles */
   .heading-box,
   .start-btn,
-  .values-to-predict{
+  .form-container .first,
+  .form-container .second,
+  .form-container .third{
     display: grid;
     place-items: center;
     background-color: #121230;
@@ -102,13 +104,19 @@ body::before {
     
     /* add the same transform property as in the .heading-box class */
     .start-btn.hidden,
-    .values-to-predict.hidden {
+    .values-to-predict.hidden
+    .form-container .first .hidden,
+    .form-container .second .hidden,
+    .form-container .third .hidden{
       transform: translateX(-100%);
     }
     
     /* add the same transform property as in the .show class */
     .start-btn.show,
-    .values-to-predict.show {
+    .values-to-predict.show,
+    .form-container .first .show,
+    .form-container .second .show,
+    .form-container .third .show {
       transform: translateX(-50%);
     }
   }
@@ -150,17 +158,75 @@ body::before {
   background-color: #161627;
 }
 
-/* values */
-.values-to-predict{
-  position: absolute;
-  top: 155%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+/* for form container */
+.form-container {
+  position:absolute;
+  top:155%;
+  left: 14%;
+  display:grid;
+  padding: 20px;
+  margin: 20px auto;
+  width: 70%;
   text-align: center;
-  z-index: 1;
-  width: 80%;
-  min-height: 30%;
-  margin-top: 4em;
+  font-family: 'Changa';
+  font-size: 22px;
+}
+.form-container .first,
+.form-container .second,
+.form-container .third{
+    margin-bottom: 40px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-label {
+  width: 200px; /* set a fixed width for the label */
+  margin-bottom: 5px;
+  color: #CCCCCC;
+}
+
+input[type="text"],
+input[type="number"] {
+  border-radius: 3px;
+  border: none;
+  padding: 5px;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.second {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  transition-delay:200ms;
+}
+
+.third{
+  transition-delay: 100ms;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* media query for heading adjustment */
