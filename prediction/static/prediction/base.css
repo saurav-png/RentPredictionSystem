@@ -1,3 +1,35 @@
+/* Hide the scrollbar track */
+::-webkit-scrollbar-track {
+  display: none;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #5c5c5c;
+  border-radius: 10px;
+  border: none;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+/* Firefox */
+* {
+  scrollbar-width:thin;
+  scrollbar-color: #5c5c5c #f1f1f1;
+}
+
+/* Edge and IE */
+body {
+  scrollbar-face-color: #f1f1f1;
+  scrollbar-shadow-color: #ddd;
+  scrollbar-highlight-color: #ddd;
+  scrollbar-3dlight-color: #f1f1f1;
+  scrollbar-darkshadow-color: #f1f1f1;
+  scrollbar-track-color: #f1f1f1;
+  scrollbar-arrow-color: #5c5c5c;
+}
+
 *{
   scroll-behavior: smooth;
 }
