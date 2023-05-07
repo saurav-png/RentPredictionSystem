@@ -8,6 +8,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('', views.home, name='prediction-home'),
     path('result/', views.result, name='prediction-result'),
+    path('about/',views.about, name='prediction-about'),
 ]
 
 if settings.DEBUG:

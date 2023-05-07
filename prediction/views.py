@@ -78,3 +78,6 @@ def result(request):
     }
 
     return render(request,'prediction/result.html',context)
+
+def about(request):
+    return render(request,'prediction/about.html')
