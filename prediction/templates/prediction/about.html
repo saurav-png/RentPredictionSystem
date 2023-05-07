@@ -54,7 +54,44 @@
                 </div>
             </div>
             <div class="about second">
-              <p>User1 was responsible for the development of the machine learning algorithms used in the system, while User2 focused on designing the page and implementing the Django framework.</p>
+                <div class="profile">
+                    <img id="profile-picture-1" alt="AddE">
+                        <script>
+                            // Retrieve profile picture from GitHub API
+                            const username1 = "AddeChander";
+                            fetch(`https://api.github.com/users/${username1}`)
+                                .then(response => response.json())
+                                .then(data => {
+                                    const avatarUrl = data.avatar_url;
+                                    const img = document.querySelector('#profile-picture-1');
+                                    img.src = avatarUrl;
+                                })
+                                .catch(error => console.error(error));
+                        </script>
+                    <div class="bio">
+                        Prateek was responsible for the development of the machine learning algorithms used in 
+                        the system.
+                    </div>
+                </div>
+                
+                <div class="profile">
+                    <img id="profile-picture-2" alt="Saurav">
+                        <script>
+                            // Retrieve profile picture from GitHub API
+                            const username2 = "saurav-png";
+                            fetch(`https://api.github.com/users/${username2}`)
+                                .then(response => response.json())
+                                .then(data => {
+                                    const avatarUrl = data.avatar_url;
+                                    const img = document.querySelector('#profile-picture-2');
+                                    img.src = avatarUrl;
+                                })
+                                .catch(error => console.error(error));
+                        </script>
+                    <div class="bio">
+                        Saurav focused on designing the page and implementing the Django framework.
+                    </div>
+                </div>
             </div>
             <div class="about">
               <p>The RentPrediction system is a useful tool for anyone looking to rent an apartment in Manhattan, Brooklyn, or Queens, as it provides an accurate estimate of rent prices based on the user's desired location and apartment features. It's an excellent example of how technology can be used to simplify complex processes and make our lives easier.</p>
