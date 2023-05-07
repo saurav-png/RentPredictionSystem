@@ -126,6 +126,12 @@
     .about.second{
         margin-top:3em;
     }
+    
+    .second.heading{
+        font-size: 40px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
  
 /* for profile pic from github */
     .profile{
@@ -232,6 +238,7 @@
     /* add the same transform property as in the .heading-box class */
     .about.heading.hidden,
     .about.first.hidden,
+    .second.heading.hidden,
     .about.libraries-used.hidden,
     .about.second.hidden,
     .profile.hidden,
@@ -243,6 +250,7 @@
     /* add the same transform property as in the .show class */
     .about.heading.show,
     .about.first.show,
+    .second.heading.show,
     .about.libraries-used.show,
     .about.second.show,
     .profile.show,
