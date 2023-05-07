@@ -35,9 +35,22 @@
     }
 
     body {
-        background-color: #1c1c1c;
-        color: #f2f2f2;
-      }
+      background: #1c1c1c;
+      color: #f2f2f2;
+    }    
+    
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      right: -30%;
+      background: url('https://techhub.wwf.ca/wp-content/uploads/Artificial-Intelligence.gif') no-repeat right center fixed;
+      opacity: 0.1;
+      z-index: -1;
+    }
 /* navbar style */
     .navbar {
         z-index: 2;
