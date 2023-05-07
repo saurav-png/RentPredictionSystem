@@ -150,9 +150,9 @@
     .profile{
         margin-top: 2em;
         margin-bottom: 2em;
-        height:280px;
-        width:100%;
+        width:90%;
         display: flex;
+        flex-shrink: 1;
         justify-content: center;
         align-items: center;
         border: 2px solid black;
@@ -288,3 +288,47 @@
       footer a:visited .fa-github {
         color: #000;
       }
+
+@media (max-width: 768px) {
+  .profile img {
+    width: 180px;
+    height: 180px;
+  }
+  .profile .bio {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .profile{
+    width:90%;
+  }
+  .profile img {
+    width: 150px;
+    height: 150px;
+  }
+  .profile .bio {
+    padding: 10px;
+  }
+  
+  footer {
+    font-size: 15px;
+    font-weight: 900;
+  }
+}
+@media screen and (max-width: 398px){
+  .profile{
+    width:95%;
+  }
+  .profile img {
+    width: 100px;
+    height: 100px;
+  }
+  .profile .bio {
+    padding: 10px;
+  }
+  
+  footer {
+    font-size: 13px;
+  }
+}

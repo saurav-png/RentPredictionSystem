@@ -393,6 +393,52 @@ body::before {
       text-align: left;
     }
   }
+  @media screen and (max-width: 430px) {
+    .form-container {
+      padding: 6px;
+      width: 35%;
+      left:7%;
+      font-size: 12px;
+    }
+  }
+
+    @media screen and (max-width: 411px) {
+    .form-container {
+      padding: 6px;
+      width: 35%;
+      left:5%;
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 392px) {
+    .form-container {
+      padding: 5px;
+      width: 10%;
+      left: 15%;
+      font-size: 15px;
+    }
+    input[type="number"] {
+      padding: 5px;
+      width: 55%;
+      height:28px;
+      flex-grow: 2;
+    }
+    .form-label {
+      width: 100px;
+    }
+    .second select{
+      width: 40%;
+    }
+    .second .form-label {
+      text-align: left;
+    }
+
+    .result{
+      height: 60%;
+      left:12%;
+    }
+  }
 
   @media screen and (max-width: 350px) {
     .heading-box{
@@ -406,8 +452,6 @@ body::before {
       margin: 10px auto;
       width: 30%;
       left:6%;
-      text-align: center;
-      font-size: 14px;
     }
     input[type="number"] {
       padding: 5px;
