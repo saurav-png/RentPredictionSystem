@@ -126,7 +126,30 @@
     .about.second{
         margin-top:3em;
     }
-  
+ 
+/* for profile pic from github */
+    .profile{
+        margin-top: 2em;
+        margin-bottom: 2em;
+        height:280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 13px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+    .profile img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 10px;
+    }  
+    .profile .bio{
+        padding: 40px;
+    }
+
 /* Style the libraries used section */
     .about.libraries-used{
         font-family: 'Carter One';
