@@ -404,8 +404,8 @@ body::before {
     .form-container {
       padding: 10px;
       margin: 10px auto;
-      width: 35%;
-      left:8%;
+      width: 30%;
+      left:6%;
       text-align: center;
       font-size: 14px;
     }
