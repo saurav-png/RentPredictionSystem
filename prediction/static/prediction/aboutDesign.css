@@ -210,6 +210,48 @@
         transform: rotate(360deg) scale(1.5);
       }
 
+/* for animations when scroll */
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+  }
+  .show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+
+/* turning off the animation to NOT repeat */
+  @media (prefers-reduced-motion: no-preference) {
+    .hidden {
+      transition: all 1s;
+    }
+    
+    /* add the same transform property as in the .heading-box class */
+    .about.heading.hidden,
+    .about.first.hidden,
+    .about.libraries-used.hidden,
+    .about.second.hidden,
+    .profile.hidden,
+    .about.third.hidden,
+    .about.last.hidden{
+      transform: translateX(-100%);
+    }
+    
+    /* add the same transform property as in the .show class */
+    .about.heading.show,
+    .about.first.show,
+    .about.libraries-used.show,
+    .about.second.show,
+    .profile.show,
+    .about.third.show,
+    .about.last.show{
+      transform: translateX(0%);
+    }
+  }
+
 /* footer */
     footer {
         font-size: 1.2em;
