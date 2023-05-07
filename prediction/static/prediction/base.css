@@ -136,7 +136,7 @@ body::before {
     
     /* add the same transform property as in the .heading-box class */
     .start-btn.hidden,
-    .values-to-predict.hidden
+    .values-to-predict.hidden,
     .form-container .first .hidden,
     .form-container .second .hidden,
     .form-container .third .hidden{
