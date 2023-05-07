@@ -1,8 +1,5 @@
 # Environments
 .env
 
-# database
-db.sqlite3
-
 # pycache
 __pycache__/
