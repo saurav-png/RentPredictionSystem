@@ -1,0 +1,277 @@
+/* Hide the scrollbar track */
+    ::-webkit-scrollbar-track {
+        display: none;
+    }
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+    /* Style the scrollbar thumb */
+    ::-webkit-scrollbar-thumb {
+        background-color: #5c5c5c;
+        border-radius: 10px;
+        border: none;
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+    /* Firefox */
+    * {
+        scrollbar-width:thin;
+        scrollbar-color: #5c5c5c #f1f1f1;
+    }
+    
+    /* Edge and IE */
+    body {
+        scrollbar-face-color: #f1f1f1;
+        scrollbar-shadow-color: #ddd;
+        scrollbar-highlight-color: #ddd;
+        scrollbar-3dlight-color: #f1f1f1;
+        scrollbar-darkshadow-color: #f1f1f1;
+        scrollbar-track-color: #f1f1f1;
+        scrollbar-arrow-color: #5c5c5c;
+    }
+    
+    *{
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: #1c1c1c;
+        color: #f2f2f2;
+      }
+/* navbar style */
+    .navbar {
+        z-index: 2;
+        position:absolute;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right:0;
+        width: 100%;
+        background-color: #3b3b3b;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .navbar a {
+      display: inline-block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+  }
+
+
+/* container section */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 50px;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+
+  .about {
+    font-family: 'Righteous';
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+    .about.heading {
+        position: relative;
+        font-family: 'Carter One';
+        left: -42%;
+        font-size: 40px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .about.heading::after{
+        content: "";
+        position: absolute;
+        bottom: -7px;
+        left: 0;
+        width: 60%;
+        height: 8px;
+        background-color: rgb(40, 72, 214);
+    }
+    
+    .about.first,
+    .about.second{
+        margin-bottom: 3em;
+    }
+
+    .about.first a{
+        text-decoration: dotted;
+        color: #64482e;
+    }
+
+    .about.first a:hover {
+        font-size: 120%;
+        text-decoration: underline;
+      }
+    
+
+    .about.second{
+        margin-top:3em;
+    }
+    
+    .second.heading{
+        font-size: 40px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+ 
+/* for profile pic from github */
+    .profile{
+        margin-top: 2em;
+        margin-bottom: 2em;
+        height:280px;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 13px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+    .profile img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 10px;
+    }  
+    .profile .bio{
+        padding: 40px;
+    }
+
+/* Style the libraries used section */
+    .about.libraries-used{
+        font-family: 'Carter One';
+        align-self: flex-start;
+
+    }
+    .library {
+        display: inline;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        margin-left: 80px;
+        margin-right: 80px
+        
+    }
+
+    .library a{
+        text-decoration: none;
+    }
+  
+    /* Style the library images */
+    .library img {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        object-fit: contain;
+        border: 2px solid #555;
+        box-shadow: 0px 0px 5px #7a7a7a;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .library img:hover {
+    box-shadow: none;
+    border: 0.5px solid #ffffff0a;
+    }
+
+
+    .fa-github,
+    .fa-envelope-open-text,
+    .fa-linkedin,
+    .fa-instagram {
+        font-size: 24px;
+        transition: transform 0.3s ease-in-out;
+        color: #000000;
+      }
+
+      .fa-envelope-open-text,
+      .fa-linkedin,
+      .fa-instagram,
+      .bio .fa-github{
+        color: #ff0000;
+      }
+
+      .fa-github:hover,
+      .fa-envelope-open-text:hover,
+      .fa-linkedin:hover,
+      .fa-instagram:hover {
+        transform: rotate(360deg) scale(1.5);
+      }
+
+/* for animations when scroll */
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+  }
+  .show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+
+/* turning off the animation to NOT repeat */
+  @media (prefers-reduced-motion: no-preference) {
+    .hidden {
+      transition: all 1s;
+    }
+    
+    /* add the same transform property as in the .heading-box class */
+    .about.heading.hidden,
+    .about.first.hidden,
+    .second.heading.hidden,
+    .about.libraries-used.hidden,
+    .about.second.hidden,
+    .profile.hidden,
+    .about.third.hidden,
+    .about.last.hidden{
+      transform: translateX(-100%);
+    }
+    
+    /* add the same transform property as in the .show class */
+    .about.heading.show,
+    .about.first.show,
+    .second.heading.show,
+    .about.libraries-used.show,
+    .about.second.show,
+    .profile.show,
+    .about.third.show,
+    .about.last.show{
+      transform: translateX(0%);
+    }
+  }
+
+/* footer */
+    footer {
+        font-size: 1.2em;
+        font-weight: 300;
+        text-align: center;
+        padding: 10px;
+      }
+      
+      footer a{
+        text-decoration: none;
+      }
+      
+      footer a:visited .fa-github {
+        color: #000;
+      }
