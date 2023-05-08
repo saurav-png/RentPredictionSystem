@@ -14,30 +14,31 @@ The RentPrediction system is a useful tool for anyone looking to rent an apartme
 
 Rent Prediction System is a Django 🐍 based project.
 
+
 ## Contributors ✨
-- [Saurav](https://github.com/saurav-png) <img src="https://avatars.githubusercontent.com/u/110325751?v=4?s=50" alt="saurav-png" style="border-radius:50%" width="70" height="70">
-- [AddE](https://github.com/Addechander) <img src="https://avatars.githubusercontent.com/u/40864924?v=4?s=50" alt="AddE" style="border-radius:50%" width="70" height="70">
+<a href="https://github.com/saurav-png"><img src="https://avatars.githubusercontent.com/u/110325751?v=4?s=50" alt="saurav-png" style="border-radius:50%" width="70" height="70"></a>
+<a href="https://github.com/Addechander"><img src="https://avatars.githubusercontent.com/u/40864924?v=4?s=50" alt="AddE" style="border-radius:50%" width="70" height="70">
 
 <small>For more information about us, check out [About](https://rentpredictionsystem.up.railway.app/about/) page.</small>
 
+
+
 ## Libraries Used
 
-- ### Machine Learning:
-  
-    <a href="https://scikit-learn.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1200px-Scikit_learn_logo_small.svg.png" align="left" height="120" ></a>
-    <a href="https://pandas.pydata.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/1200px-Pandas_logo.svg.png" align="left" height="120" ></a>
-    <a href="https://numpy.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" align="left" height="120" ></a>
+| Machine Learning | Web Development |
+| --- | --- |
+| <a href="https://scikit-learn.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1200px-Scikit_learn_logo_small.svg.png" height="80" ></a><br/>Scikit-learn | <a href="https://www.djangoproject.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Django_logo.svg" height="80" ></a><br/>Django |
+| <a href="https://pandas.pydata.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/1200px-Pandas_logo.svg.png" height="80" ></a><br/>Pandas | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" height="80" ></a><br/>HTML5 |
+| <a href="https://numpy.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" height="80" ></a><br/>NumPy | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" height="80" ></a><br/>CSS3 |
+| | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" height="80" ></a><br/>JavaScript |
 
-- ### Web Development:
-  
-    <a href="https://www.djangoproject.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Django_logo.svg" align="left" height="120" ></a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" align="left" height="120" ></a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" align="left" height="120" ></a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" align="left" height="120" ></a>
+
 
 ## Accuracy
 
 This Portion has already been explained on [visualisation.ipynb](./visualization.ipynb)
+
+
 
 ## Credits
 
@@ -47,6 +48,8 @@ This Portion has already been explained on [visualisation.ipynb](./visualization
 | [Freepik.com](https://www.freepik.com/) | Background image in the [home](https://rentpredictionsystem.up.railway.app/) page. |
 | The gif image | Sourced from [techhub.wwf](https://techhub.wwf.ca/wp-content/uploads/Artificial-Intelligence.gif). |
 | Favicon | Created using [favicon.io](https://favicon.io/) |
+
+
 
 
 ## License
