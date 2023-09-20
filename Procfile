@@ -1,1 +1,0 @@
-web: gunicorn RentPredictionSystem.wsgi --log-file -
