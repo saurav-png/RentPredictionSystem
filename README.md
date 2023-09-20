@@ -35,7 +35,7 @@ Rent Prediction System is a Django 🐍 based project.
 
 
 ## Deployment Site
-### [Railway](https://rentpredictionsystem.up.railway.app/)
+### [Render](https://rentpredictionsystem.onrender.com/)
 
 
 ## Accuracy
