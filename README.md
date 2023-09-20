@@ -7,7 +7,7 @@
 </p>
 
 <p align=center>
-    <a href="https://github.com/saurav-png/RentPredictionSystem/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-success" alt="Apache 2.0 License"></a>
+    <a href="https://github.com/Addechander/RentPredictionSystem/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-success" alt="Apache 2.0 License"></a>
 </p>
 
 The RentPrediction system is a useful tool for anyone looking to rent an apartment in Manhattan, Brooklyn, or Queens, as it provides an accurate estimate of rent prices based on the user's desired location and apartment features. It's an excellent example of how technology can be used to simplify complex processes and make our lives easier.
@@ -48,7 +48,7 @@ This Portion has already been explained on [visualisation.ipynb](./visualization
 
 | Credit | Description |
 | --- | --- |
-| Multiple Linear Regression (MLR) | Covered in Codecademy's Introduction to Machine Learning curriculum, which assisted us in understanding and applying MLR in this project. We'd like to thank Codecademy and the StreetEasy Research team for designing and providing the data and instructions that enabled us to finish this project. The specific course that assisted us with this project can be found at [Codecademy](https://www.codecademy.com/learn/machine-learning). StreetEasy is New York City's most popular real estate marketplace, with listings ranging from studio apartments in Brooklyn Heights to high-rise condos in Harlem. By visiting [this link](https://www.codecademy.com/content-items/d19f2f770877c419fdbfa64ddcc16edc), you can see how the data they provided was utilized in the project. For more info visit [readme](https://github.com/saurav-png/RentPredictionSystem/blob/main/prediction/streeteasy/README.md) |
+| Multiple Linear Regression (MLR) | Covered in Codecademy's Introduction to Machine Learning curriculum, which assisted us in understanding and applying MLR in this project. We'd like to thank Codecademy and the StreetEasy Research team for designing and providing the data and instructions that enabled us to finish this project. The specific course that assisted us with this project can be found at [Codecademy](https://www.codecademy.com/learn/machine-learning). StreetEasy is New York City's most popular real estate marketplace, with listings ranging from studio apartments in Brooklyn Heights to high-rise condos in Harlem. By visiting [this link](https://www.codecademy.com/content-items/d19f2f770877c419fdbfa64ddcc16edc), you can see how the data they provided was utilized in the project. For more info visit [readme](https://github.com/Addechander/RentPredictionSystem/blob/main/prediction/streeteasy/README.md) |
 | [Freepik.com](https://www.freepik.com/) | Background image in the [home](https://rentpredictionsystem.up.railway.app/) page. |
 | The gif image | Sourced from [techhub.wwf](https://techhub.wwf.ca/wp-content/uploads/Artificial-Intelligence.gif). |
 | Favicon | Created using [favicon.io](https://favicon.io/) |
